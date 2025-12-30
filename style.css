@@ -26,8 +26,8 @@ a:hover { color:#1ABC9C; }
 
 /* Profile picture */
 .profile-pic {
-  width:120px;
-  height:120px;
+  width:150px;       /* was 120px */
+  height:150px;      /* was 120px */
   border-radius:5px;
   object-fit:cover;
   display:block;
@@ -73,12 +73,15 @@ p { margin:0.5rem 0; line-height:1.5; }
   text-align:center;
 }
 .project img {
-  width:100%;
+  width:105%;       /* slightly bigger */
+  max-width:100%;   /* prevents overflow */
   height:150px;
   object-fit:cover;
   margin-bottom:0.5rem;
 }
-.project a { color:#0FF; }
+.project a { 
+  color:#0FF; 
+}
 
 /* Contact Links */
 .contact-links { margin-top:1rem; }
